@@ -27,7 +27,7 @@ int main(){
 Global variables are defined outside of all the functions, usually on top of the program.
 the global variable will hold their value throughout the life-time of your program.
 
-example:*/
+example:
 #include<iostream>
 using namespace std;
 //global variable 
@@ -42,7 +42,22 @@ int main(){
     cout<<g;
 
     return 0;
-}
+}*/
 //output will be 0 as there is no value assigned to g.
 
-/*a Global variable can be accessed by any function. That means, a global variable is available for use throughout your entire program after its declaration*/
+/*a Global variable can be accessed by any function. 
+That means, a global variable is available for use throughout your entire program after its declaration
+
+A program can have the same name for local and global variables but the value of the local variable inside a function will take preference.
+Example:
+*/
+#include<iostream>
+using namespace std;
+//global variable 
+int g=20;
+int main(){
+    int g =10;
+    cout<<g;
+
+    return 0;
+}
