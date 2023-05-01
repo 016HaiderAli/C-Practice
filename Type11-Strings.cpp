@@ -17,24 +17,31 @@ int main(){
 
 using namespace std;
 
-int main () {
+int main()
+{
 
-   char str1[10] = "Hello";
-   char str2[10] = "World";
-   char str3[10];
-   int  len ;
+    char str1[10] = "Hello";
+    char str2[10] = "World";
+    char str3[10];
+    int len;
 
-   // copy str1 into str3
-   strcpy( str3, str1);
-   cout << "strcpy( str3, str1) : " << str3 << endl;
+    // copy str1 into str3
+    strcpy(str3, str1);
+    cout << "strcpy( str3, str1) : " << str3 << endl;
 
-   // concatenates str1 and str2
-   strcat( str1, str2);
-   cout << "strcat( str1, str2): " << str1 << endl;
+    // concatenates str1 and str2
+    strcat(str1, str2);
+    cout << "strcat( str1, str2): " << str1 << endl;
 
-   // total lenghth of str1 after concatenation
-   len = strlen(str1);
-   cout << "strlen(str1) : " << len << endl;
+    // total lenghth of str1 after concatenation
+    len = strlen(str1);
+    cout << "strlen(str1) : " << len << endl;
 
-   return 0;
+    string name = "HaiderAli";
+    cout << endl
+         << name;
+    cout << endl
+         << "substring of my name " << name.substr(0, 6);
+
+    return 0;
 }
